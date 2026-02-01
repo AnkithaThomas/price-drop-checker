@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amazon Price Tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Amazon Price Tracker</h1>
+
+        <div class="message-card">
+            <p>{{ message }}</p>
+
+            <!-- Show clickable Amazon link -->
+            <p>
+                Product URL: 
+                <a href="{{ product_url }}" target="_blank">{{ product_url }}</a>
+            </p>
+
+            <!-- Track Another Product button -->
+            <a href="/" class="track-again-button">Track Another Product</a>
+        </div>
+    </div>
+</body>
+</html>

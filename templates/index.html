@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amazon Price Tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Amazon Price Tracker</h1>
+
+        <div class="form-card">
+            <form action="/track" method="POST">
+                <input type="text" name="url" placeholder="Amazon Product URL" required>
+                <input type="number" step="0.01" name="price" placeholder="Target Price" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <button type="submit">Track</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

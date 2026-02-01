@@ -1,0 +1,129 @@
+/* --- Global Body --- */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe6f0, #fff0f5); /* soft pink gradient */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* --- Container for vertical stacking --- */
+.container {
+    text-align: center;
+}
+
+/* --- Heading --- */
+h1 {
+    color: #c2185b; /* deep pink */
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+/* --- Form Card --- */
+.form-card,
+.message-card {
+    background-color: #ffffff; /* white card */
+    padding: 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.form-card:hover,
+.message-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.12);
+}
+
+/* --- Input Fields --- */
+.form-card input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #f8bbd0; /* light pink border */
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.form-card input:focus {
+    border-color: #c2185b; /* deep pink highlight */
+    box-shadow: 0 0 8px rgba(194, 24, 91, 0.3);
+    outline: none;
+}
+
+/* --- Submit Button --- */
+.form-card button {
+    width: 100%;
+    padding: 14px;
+    background-color: #c2185b; /* deep pink button */
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-card button:hover {
+    background-color: #ad1457; /* darker pink on hover */
+    transform: translateY(-2px);
+}
+
+/* --- Track Another Product Button --- */
+.track-again-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #c2185b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.track-again-button:hover {
+    background-color: #ad1457;
+    transform: translateY(-2px);
+}
+
+.track-again-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #c2185b; /* deep pink */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.track-again-button:hover {
+    background-color: #ad1457; /* darker pink on hover */
+    transform: translateY(-2px);
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 450px) {
+    .form-card,
+    .message-card {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
